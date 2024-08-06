@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian QA Group <packages@qa.debian.org>
 Build-Depends: debhelper-compat (= 12), dh-python
 Build-Depends-Indep: python3
-Standards-Version: 4.5.1
+Standards-Version: 4.6.2
 Rules-Requires-Root: no
 Homepage: http://dblatex.sourceforge.net/
 Vcs-Browser: https://salsa.debian.org/debian/dblatex
@@ -48,8 +48,6 @@ Package: dblatex-doc
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
-Replaces: dblatex (<< 0.3.8-1)
-Breaks: dblatex (<< 0.3.8-1)
 Multi-Arch: foreign
 Description: Documentation for dblatex
  Additional documentation for dblatex in HTML and PDF.  Includes:

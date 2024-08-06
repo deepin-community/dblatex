@@ -1,3 +1,38 @@
+dblatex (0.3.12py3-4) unstable; urgency=medium
+
+  * QA upload.
+
+  * Fix paths in the d/dblatex-doc.doc-base.* files
+  * d/s/lintian-overrides: Override Lintian error source-is-missing
+
+ -- Rafael Laboissière <rafael@debian.org>  Sun, 11 Feb 2024 06:02:35 -0300
+
+dblatex (0.3.12py3-3) unstable; urgency=medium
+
+  * QA upload.
+
+  [ Graham Inggs ]
+  * Cherry-pick two patches from Fedora for Python 3.12 compatibility.
+    Closes: #1061320.
+  * Fix several instances of SyntaxWarning: invalid escape sequence.
+
+  [ Matthias Klose ]
+  * Bump standards version.
+  * Stop dblatex invoking inkscape with deprecated options. Closes: #1033547.
+
+ -- Matthias Klose <doko@debian.org>  Wed, 24 Jan 2024 18:51:13 +0100
+
+dblatex (0.3.12py3-2) unstable; urgency=medium
+
+  * QA upload.
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + dblatex-doc: Drop versioned constraint on dblatex in Replaces.
+    + dblatex-doc: Drop versioned constraint on dblatex in Breaks.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 25 May 2022 11:10:09 +0100
+
 dblatex (0.3.12py3-1) unstable; urgency=medium
 
   * QA upload.

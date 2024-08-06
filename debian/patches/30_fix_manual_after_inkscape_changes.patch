@@ -1,0 +1,13 @@
+Author: Wolfgang Schweer <wschweer@arcor.de>
+Description: Adjust manual after Inkscape command line option changes
+--- a/docs/xhtml/manual/sec-specs.html
++++ b/docs/xhtml/manual/sec-specs.html
+@@ -35,7 +35,7 @@
+   &lt;imagedata&gt;
+     &lt;converter src="svg" dst="*" docformat="pdf"&gt;
+       &lt;command&gt;
+-        inkscape -z -D --export-dpi=600 --export-%(dst)s=%(output)s %(input)s
++        inkscape -D --export-dpi=600 --export-filename=%(output)s %(input)s
+       &lt;/command&gt;
+     &lt;/converter&gt;
+   &lt;/imagedata&gt;
