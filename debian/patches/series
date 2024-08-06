@@ -3,3 +3,9 @@
 20_subtitle_handling.patch
 20_db2latex_title_page.patch
 20_pt_quote.patch
+python3.12-replace-imp-by-importlib.patch
+python3.12-adjust-submodule-imports.patch
+python3.12-SyntaxWarnings.patch
+30_fix_doc_after_inkscape_changes.patch
+30_fix_inkscape_options.patch
+30_fix_manual_after_inkscape_changes.patch

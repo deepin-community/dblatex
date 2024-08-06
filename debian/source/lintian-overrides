@@ -1,0 +1,5 @@
+# The upstream documentation in HTML format, which is shipped in the
+# directories docs/xhtml/{manual,release-notes}/, are built from the
+# DocBook sources, which are included in the upstream tarball
+# (docs/*.xml).
+dblatex source: source-is-missing [docs/xhtml/*/*.html]
