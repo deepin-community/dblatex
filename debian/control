@@ -2,7 +2,10 @@ Source: dblatex
 Section: text
 Priority: optional
 Maintainer: Debian QA Group <packages@qa.debian.org>
-Build-Depends: debhelper-compat (= 12), dh-python
+Build-Depends:
+ debhelper-compat (= 12),
+ dh-sequence-python3,
+ python3-setuptools,
 Build-Depends-Indep: python3
 Standards-Version: 4.6.2
 Rules-Requires-Root: no

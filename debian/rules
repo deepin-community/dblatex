@@ -1,12 +1,10 @@
 #!/usr/bin/make -f
 
-# Use the debhelper command sequencer.
 %:
-	dh $@ --buildsystem=pybuild --with python3
+	dh $@ --buildsystem=pybuild
 
-override_dh_clean:
+execute_beforee_dh_clean:
 	rm --force --recursive docs/examples/
-	dh_clean
 
 override_dh_auto_build:
 	# - Nothing to be compiled
@@ -16,10 +14,9 @@ override_dh_auto_build:
 override_dh_installchangelogs:
 	dh_installchangelogs docs/changes/changes.txt
 
-override_dh_installexamples:
+execute_before_dh_installexamples:
 	tar --directory=docs --extract --bzip2 --exclude=COPYRIGHT \
 	    --file=examples/examples-src.tar.bz2
-	dh_installexamples
 
 override_dh_python3:
 	dh_python3 --shebang=/usr/bin/python3
