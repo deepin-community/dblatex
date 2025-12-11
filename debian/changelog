@@ -1,3 +1,12 @@
+dblatex (0.3.12py3-5) unstable; urgency=medium
+
+  * QA upload.
+
+  * Use dh-sequence-python3
+  * Add explicity build-dep on python3-setuptools (Closes: #1080579)
+
+ -- Alexandre Detiste <tchet@debian.org>  Sun, 19 Jan 2025 21:31:24 +0100
+
 dblatex (0.3.12py3-4) unstable; urgency=medium
 
   * QA upload.
